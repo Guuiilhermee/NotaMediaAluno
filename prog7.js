@@ -11,14 +11,14 @@ function principal(){
     console.log(`A média do aluno foi: ${media.toFixed(2)}`)
 
     if (media < 5.0){
-        resposta.innerHTML = `Você não alcançou a média: REPROVADO`
+        resposta.innerHTML = `Você não alcançou a média: REPROVADO <br>`
     }else if(media >= 5.0 && media < 7.0){
-        resposta.innerHTML = `Precisa fazer a RECUPERAÇÃO`
+        resposta.innerHTML = `Precisa fazer a RECUPERAÇÃO <br>`
     }else if(media >= 7.0){
-        resposta.innerHTML = `Você está APROVADO, Parabéns!`
+        resposta.innerHTML = `Você está APROVADO, Parabéns! <br>`
     }
 
-    // resposta.innerHTML = ``
-    // resposta.innerHTML += `As notas do aluno são: ${nota1} ${nota2} ${nota3} <br>`
-    // resposta.innerHTML += `A média do aluno foi: ${media.toFixed(2)}`
+    //  resposta.innerHTML = ``
+     resposta.innerHTML += `As notas do aluno são: ${nota1}, &nbsp ${nota2}, &nbsp ${nota3} <br>`
+     resposta.innerHTML += `A média do aluno foi: ${media.toFixed(2)}`
 }
